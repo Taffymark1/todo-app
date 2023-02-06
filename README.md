@@ -1,14 +1,13 @@
 # Todo-app
 
-![2](https://user-images.githubusercontent.com/73521518/216703565-8a265f14-f85c-463b-ab19-b5b602dc93c3.PNG)
+![2]()
 
 ---
 
 ### 분리한 컴포넌트
 
 재사용이 가능한 컴포넌트는 components 폴더에 작성.
-Board.tsx : Pending과 Done의 board.
-Card.tsx : 각 Board가 갖는 task를 렌더링하는 컴포넌트.
+
 
 ---
 
