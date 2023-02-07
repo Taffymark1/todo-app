@@ -1,3 +1,18 @@
 .TodoList {
-    overflow-y: auto;
-  }
+  float: left;
+  width: 550px;
+  overflow-y: auto;
+}.Working {
+  text-align: center;
+  font-size: 40px;
+  
+}
+
+.TodoListDone {
+  float: right;
+  width: 550px;
+  overflow-y: auto;
+}.Done {
+  text-align: center;
+  font-size: 40px;
+}

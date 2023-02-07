@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback } from 'react';
 import TodoTemplate from './components/TodoTemplate';
 import TodoInsert from './components/TodoInsert';
 import TodoList from './components/TodoList';
+import TodoListDone from './components/TodoListDone';
  
 const App = () => {
   const [todos, setTodos] = useState([
@@ -65,6 +66,7 @@ const App = () => {
     <TodoTemplate>
       <TodoInsert onInsert={onInsert} />
       <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle} />
+      <TodoListDone todos={todos} onRemove={onRemove} onToggle={onToggle} />
     </TodoTemplate>
   );
 };
