@@ -7,18 +7,21 @@ const App = () => {
   const [todos, setTodos] = useState([
     {
       id: 1,
-      text: '리액트의 기초 알아보기',
-      checked: true,
+      title: '리액트 공부하기',
+      text: '리액트 기초를 공부해봅시다.',
+      checked: false,
     },
     {
       id: 2,
-      text: '컴포넌트 스타일링해 보기',
-      checked: true,
+      title : '컴포넌트 스타일링해 보기',
+      text: '컴포넌트 스타일링 해봅시다.',
+      checked: false,
     },
     {
       id: 3,
-      text: '일정 관리 앱 만들어 보기',
-      checked: false,
+      title : '일정 관리 앱 만들어 보기',
+      text: '일정 관리 앱 만들어 봅시다.',
+      checked: true,
     },
   ]);
  
