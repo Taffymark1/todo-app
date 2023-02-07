@@ -13,13 +13,10 @@ const TodoListItem = ({ todo, onRemove, onToggle }) => {
     return (
       <div className="TodoListItem">
         <div className='title'>{title}</div>
-        
-          <div className={cn('checkbox', { checked })} onClick={() => onToggle(id)}>
-            {checked ? <MdUndo /> : <MdDone />}
-            <div className="text">{text}</div>
+          <div className={cn('checkbox', { checked })} >
+          <div className="text">{text}</div>
+          <div onClick={() => onToggle(id)}>{checked ? <MdUndo /> : <MdDone />}</div>
           </div>
-          
-        
         <div className="remove" onClick={() => onRemove(id)}>
           <MdRemoveCircleOutline />
         </div>

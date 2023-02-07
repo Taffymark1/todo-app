@@ -30,9 +30,10 @@ const App = () => {
   const nextId = useRef(4);
  
   const onInsert = useCallback(
-    text => {
+    (title,text) => {
       const todo = {
         id: nextId.current,
+        title,
         text,
         checked: false,
       };

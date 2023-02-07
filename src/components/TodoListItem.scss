@@ -6,11 +6,11 @@
     background: #f8f9fa;
   }
   .checkbox {
-    cursor: pointer;
     display: flex;
     align-items: center; // 세로 중앙 정렬
     svg {
       // 아이콘
+      cursor: pointer;
       color: #22b8cf;
       font-size: 1.5rem;
     }
@@ -21,6 +21,7 @@
     // 체크되었을 때 보여 줄 스타일
     &.checked {
       svg {
+        cursor: pointer;
         color: black;
       }
       .text {
