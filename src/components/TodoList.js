@@ -6,7 +6,7 @@ const TodoList = ({ todos, onRemove, onToggle  }) => {
   return (
     <div className="TodoList">
       <div className="Working">working..🔥</div>
-      {todos.map(todo => (
+      {todos.filter(todo => !todo.checked).map(todo => (
         <TodoListItem 
         todo={todo} 
         key={todo.id} 
